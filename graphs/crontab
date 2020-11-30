@@ -1,0 +1,36 @@
+# fetch knmi measurements into database:
+1 */4 * * *	web/meetjestad.net/public_html/static/graphs/knmi/bin/haal_knmi_th.sh >> web/meetjestad.net/public_html/static/graphs/knmi/log/haal_knmi_th.log
+2 0 * * *	rm -rf `find web/meetjestad.net/public_html/static/graphs/knmi/log/ -name knmi_th.????-????.* -mtime +0`
+
+# fetch remote measurements into database:
+3,18,33,48 * * * *	web/meetjestad.net/public_html/static/graphs/se_th/bin/haal_se_th.sh >> web/meetjestad.net/public_html/static/graphs/se_th/log/haal_se_th.log
+4,19,34,49 * * * *	web/meetjestad.net/public_html/static/graphs/sens7021/bin/haal_sens7021.sh >> web/meetjestad.net/public_html/static/graphs/sens7021/log/haal_sens7021.log
+5 0 * * *	find web/meetjestad.net/public_html/static/graphs/sens7021/log -name sens7021.????-????.??? -mtime +0 -exec rm -f {} \;
+5 0 * * *	find web/meetjestad.net/public_html/static/graphs/se_th/log -name se_th.????-????.??? -mtime +0 -exec rm -f {} \;
+
+# generate 01d graphs:
+9,24,39,54 * * * *	web/meetjestad.net/public_html/static/graphs/pm/bin/run_pm_XXX_01d.sh >> web/meetjestad.net/public_html/static/graphs/pm/log/mjs_pm_01d.log
+9,24,39,54 * * * *	web/meetjestad.net/public_html/static/graphs/se_th/bin/run_se_XXXX_01d.sh >> web/meetjestad.net/public_html/static/graphs/se_th/log/balc_se_01d.log
+9,24,39,54 * * * *	web/meetjestad.net/public_html/static/graphs/sens7021/bin/run_7021_XXXX_01d.sh >> web/meetjestad.net/public_html/static/graphs/sens7021/log/balc_7021_01d.log
+
+# generate 04d graphs:
+10,25,40,55 * * * *	web/meetjestad.net/public_html/static/graphs/bin/run_graph_04d.sh > web/meetjestad.net/public_html/static/graphs/log/graph_04d.log
+
+# generate 02w graphs:
+11 */2 * * *	web/meetjestad.net/public_html/static/graphs/bin/run_graph_02w.sh > web/meetjestad.net/public_html/static/graphs/log/graph_02w.log
+
+# generate 02m graphs:
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/bodem/bin/run_bodem_XXXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/bodem/log/bodem_02m.log
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/fixhumi/bin/run_7021_XXXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/fixhumi/log/fhum_02m.log
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/fixhumi/bin/run_fhum_XXXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/fixhumi/log/fhum_02m.log
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/pm/bin/run_pm_XXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/pm/log/mjs_pm_02m.log
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/pm/bin/run_th_XXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/pm/log/mjs_th_02m.log
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/se_th/bin/run_se_XXXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/se_th/log/balc_se_02m.log
+12 0 * * *	web/meetjestad.net/public_html/static/graphs/sens7021/bin/run_7021_XXXX_02m.sh >> web/meetjestad.net/public_html/static/graphs/sens7021/log/balc_7021_02m.log
+
+# generate 06m graphs:
+13 0 * * *	web/meetjestad.net/public_html/static/graphs/fixhumi/bin/run_7021_XXXX_06m.sh >> web/meetjestad.net/public_html/static/graphs/fixhumi/log/fhum_06m.log
+13 0 * * *	web/meetjestad.net/public_html/static/graphs/fixhumi/bin/run_fhum_XXXX_06m.sh >> web/meetjestad.net/public_html/static/graphs/fixhumi/log/fhum_06m.log
+13 0 * * *	web/meetjestad.net/public_html/static/graphs/sens7021/bin/run_7021_XXXX_06m.sh >> web/meetjestad.net/public_html/static/graphs/sens7021/log/balc_7021_06m.log
+13 0 * * *	web/meetjestad.net/public_html/static/graphs/pm/bin/run_pm_XXX_06m.sh >> web/meetjestad.net/public_html/static/graphs/pm/log/mjs_pm_06m.log
+13 0 * * *	web/meetjestad.net/public_html/static/graphs/se_th/bin/run_se_XXXX_06m.sh >> web/meetjestad.net/public_html/static/graphs/se_th/log/balc_se_06m.log
