@@ -27,7 +27,9 @@ http://ladylein.nl/R/index.html
 
 [Data ophalen vanuit een script](https://www.knmi.nl/kennis-en-datacentrum/achtergrond/data-ophalen-vanuit-een-script)
 
-
+https://www.knmi.nl/nederland-nu/klimatologie \\
+https://www.knmi.nl/nederland-nu/klimatologie/uurgegevens \\
+http://projects.knmi.nl/klimatologie/uurgegevens/selectie.cgi \\
 
 
 
