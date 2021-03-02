@@ -17,6 +17,12 @@ SQL=../log/se_th.$PDDC.sql
 echo HIER=$HIER IK=$IK PDDC=$PDDC RUW=$RUW LOG=$LOG
 
 
+[ -r external_url.env ] || {
+    echo "external_url.env not found; abort"
+    exit 1
+}
+. ./external_url.env
+
 [ -r meetjestad_test.env ] || {
     echo "meetjestad_test.env not found; abort"
     exit 1
@@ -24,11 +30,12 @@ echo HIER=$HIER IK=$IK PDDC=$PDDC RUW=$RUW LOG=$LOG
 . ./meetjestad_test.env
 
 
-# fetch the last 400 measurements: from balcon:
-wget -O$RUW -o$LOG "http://$URL:$PORT/$PATH/$SCRIPT.php?$PARAM1&$PARAM2"   # every 5 minutes = 1 hour history
+# fetch the last 400 measurements from external source:
+echo wget -O$RUW -o$LOG "$URL/$PAD/$PHP?header&number=12"   # every 5 minutes = 1 hour history
+wget -O$RUW -o$LOG "$URL/$PAD/$PHP?header&number=12"   # every 5 minutes = 1 hour history
 [ ! -r $RUW ] && {
     echo "wget mislukt; abort"
-        exit 1
+    exit 1
 }
 ls -l $RUW $LOG
 

@@ -10,14 +10,14 @@ set terminal png size 1920,320 transparent
 set output "../png/mjs_mjs20_2002_th_02w.png"
 set xdata time
 set timefmt "%Y-%m-%d.%H:%M:%S"
-set format x "%H\n%d"
+set format x "     %d\n       %b"
 set autoscale xfix
 set xtics 86400
 set mxtics 4
 set xtics font ", 18"
-set ytics nomirror
+set ytics  nomirror
 set y2tics nomirror
-set ytics font ", 18" textcolor rgb "red" 
+set ytics  font ", 18" textcolor rgb "red" 
 set y2tics font ", 18" textcolor rgb "blue" 
 set grid xtics ytics
 set boxwidth 60

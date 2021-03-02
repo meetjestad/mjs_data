@@ -19,7 +19,7 @@ echo HIER=$HIER IK=$IK PDDC=$PDDC RUW=$RUW LOG=$LOG
 
 
 # fetch the last 400 measurements from balcon:
-wget -O$RUW -o$LOG "http://$URL:$PORT/$PATH/$SCRIPT.php?$PARAM1&$PARAM2"   # 36 = 6 every 5 minutes = 30 minutes history
+wget -O$RUW -o$LOG 'http://demmer.xs4all.nl:86/sens7021/sens7021.php?header&number=36'   # 36 = 6 every 5 minutes = 30 minutes history
 [ ! -r $RUW ] && {
     echo "wget mislukt; abort"
         exit 1

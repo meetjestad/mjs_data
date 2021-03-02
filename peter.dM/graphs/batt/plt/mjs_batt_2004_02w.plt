@@ -16,8 +16,8 @@ set mxtics 4
 set xtics  font ", 18"
 set ytics  nomirror
 set y2tics nomirror
-set ytics  font ", 18" textcolor rgbcolor "#007F00" 
-set y2tics font ", 18" textcolor rgbcolor "#FF7F00" 
+set ytics  font ", 18" textcolor rgbcolor "#FF7F00" 
+set y2tics font ", 18" textcolor rgbcolor "#000000" 
 set grid xtics ytics
 set pointsize 0.1
 set boxwidth 120
@@ -25,6 +25,7 @@ set style fill transparent solid 0.10 noborder
 
 
 plot \
-   "< cat ../../knmi/lst/knmi_thdrs_02w.lst"  using 1:($7)  title 'zonnestraling (KNMI)'  axis x1y2  w lp  lw 8  lc rgbcolor '#FFBF7F'  pt 3, \
-   "< cat ../lst/mjs_batt_2004_02w.lst"       using 1:($2)  title 'battery      '  axis x1y1  w lp  lw 3  lc rgbcolor '#007F00'   dt 1  pt 3, \
-   "< cat ../lst/mjs_batt_2004_02w.lst"       using 1:($3)  title 'supply       '  axis x1y1  w lp  lw 3  lc rgbcolor '#007F00'   dt 1  pt 3
+   "< cat ../../knmi/lst/knmi_thdrs_02w.lst"  using 1:($7)  title '< zonnestraling (KNMI)  '  axis x1y1  w lp  lw 12  lc rgbcolor '#FFDFBF'        pt 3, \
+   "< cat ../lst/mjs_batt_2004_sb_02w.lst"    using 1:($3)  title '                 solar >'  axis x1y2  w lp  lw 3   lc rgbcolor '#FF7F00'  dt 1  pt 3, \
+   "< cat ../lst/mjs_batt_2004_sb_02w.lst"    using 1:($4)  title '               battery >'  axis x1y2  w lp  lw 3   lc rgbcolor '#7F7FFF'  dt 1  pt 3, \
+   "< cat ../lst/mjs_batt_2004_sb_02w.lst"    using 1:($5)  title '                supply >'  axis x1y2  w lp  lw 3   lc rgbcolor '#007F00'  dt 1  pt 3

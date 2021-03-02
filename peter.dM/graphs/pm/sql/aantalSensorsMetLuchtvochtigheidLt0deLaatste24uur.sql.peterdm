@@ -1,0 +1,3 @@
+-- aantal sensors met meting van luchtvochtigheid < 0. in de laatste 24 uur
+
+select distinct stationid from measurements where humidity < 0. and unixtime > (select max(unixtime) from measurements) - 86400 order by stationid asc;

@@ -3,23 +3,20 @@ echo ""
 
 cd `dirname $0` 
 HIER=`pwd`
-IK=`basename $0`
+IK=`basename $0 .sh`
 
-[ ! -d ../plt ] && mkdir ../plt
+#[ ! -d ../lst ] && mkdir ../lst
+#[ ! -d ../plt ] && mkdir ../plt
+#[ ! -d ../plt ] && mkdir ../png
 
-#SH=run_knmi_regen_02m.sh
-#ls -l $SH
-#./$SH 
-#sleep 1
-#cd $HIER
 
-for SH in run_mjs20_????_02m.sh 
+for SH in run_mjs20_????_02m.sh run_mjs20_????_?_02m.sh
 do
-    [ `basename $SH` != $IK ] && {
+    [ `basename $SH .sh` != $IK ] && {
         [ -x $SH ] && {
-            ls -l $SH
-            ./$SH
-            sleep 1
+            ls -l $SH | sed 's/^/    /'
+            ./$SH | sed 's/^/    /'
+            sleep 2
         }
     }
 done

@@ -10,7 +10,7 @@ set terminal png size 1920,480 transparent
 set output "../png/mjs_mjs20_2002_pm_02w.png"
 set xdata time
 set timefmt "%Y-%m-%d.%H:%M:%S"
-set format x "%H\n%d"
+set format x "     %d\n       %b"
 set autoscale xfix
 set xtics 86400
 set mxtics 4

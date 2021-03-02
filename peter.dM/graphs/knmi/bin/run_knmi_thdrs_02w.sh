@@ -24,6 +24,7 @@ esac
 
 SQL="SELECT FROM_UNIXTIME(unixtime), temp, humi, dauw, regen, regen7d, straling FROM knmi_th \
 WHERE localtijd > '$STARTTIME' ORDER BY unixtime ASC; "
+echo "# SQL=$SQL"
 
 echo $SQL | mysql -N -u$DBUSER -D$DBASE -p$DBPASS | awk '{ printf("%s.%s %.1f %.0f %.1f %.1f %.2f %.0f\n", $1, $2, $3, $4, $5, $6, $7, $8) }' > ../../knmi/lst/$LST
 ls -l ../../knmi/lst/$LST

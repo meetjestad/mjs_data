@@ -1,0 +1,4 @@
+-- aantal sensors actief in de laatste 24 uur
+
+select distinct stationid from measurements where unixtime > (select max(unixtime) from measurements) - 86400 order by unixtime asc;
+
