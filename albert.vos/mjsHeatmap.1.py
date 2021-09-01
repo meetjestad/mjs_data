@@ -102,14 +102,12 @@ webbrowser.open(file_path)
 
 
 
-
 '''
 https://meetjestad.net/data/?type=sensors&begin=2017-11-16,12:00&end=2017-11-16,12:15&format=json
 
 https://meetjestad.net/data/?type=sensors&ids=2009&begin=2020-11-16,12:00&end=2021-08-28,23:59&format=json
 
 '''
-
 
 
 
