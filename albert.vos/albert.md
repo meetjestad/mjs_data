@@ -1,8 +1,9 @@
 # Albert's data processing attempts
 
-## 1) mjsHeatmap.1.py
+## 1) mjsDVTest.ipynb
 
-  python3 mjsHeatmap.1.py
+  ** First install Anaconda **
+  jupyter notebook mjsDVTest.ipynb
 
 
 
