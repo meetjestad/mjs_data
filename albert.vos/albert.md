@@ -1,13 +1,15 @@
 # Albert's data processing attempts
 
-## 1) mjsDVTest.ipynb
+**First install Anaconda**
 
-** First install Anaconda **
 https://www.anaconda.com/products/individual
 
-Then run the notebook:
+**Then run the notebook**
 
-jupyter notebook mjsDVTest.ipynb
+e.g.: jupyter notebook mjsDVTest.ipynb
+
+## mjsDVTest.ipynb
+This file contains tests and examples on how to use things.
 
 
 
