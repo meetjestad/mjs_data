@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  database:
+    image: amsterdam/postgres11
+    ports:
+      - "5417:5432"
+    environment:
+      POSTGRES_DB: ds_airflow
+      POSTGRES_USER: ds_airflow
+      POSTGRES_PASSWORD: insecure
+
+  dso_database:
+    image: amsterdam/postgres11
+    ports:
+      - "5416:5432"
+    environment:
+      POSTGRES_DB: dataservices
+      POSTGRES_USER: dataservices
+      POSTGRES_PASSWORD: insecure
+    extra_hosts:
+      admin.data.amsterdam.nl: 10.243.16.4
