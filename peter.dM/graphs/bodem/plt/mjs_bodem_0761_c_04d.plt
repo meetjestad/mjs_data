@@ -11,7 +11,6 @@ set xdata time
 set timefmt "%Y-%m-%d.%H:%M:%S"
 set format x "%H\n%d"
 set autoscale xfix
-#set logscale y
 set xtics 14400
 set mxtics 4
 set xtics font ", 18"
@@ -27,10 +26,10 @@ set style fill transparent solid 0.10 noborder
 
 
 plot \
-   "< cat ../lst/knmi_regen_04d.lst"        using 1:($3)  title '< regen7d [mm]  '  axis x1y1  w lp  lw 12  lc rgbcolor '#DFDFFF'  dt 1  pt 3, \
-   "< cat ../lst/mjs_bodem_0761_c_04d.lst"  using 1:($3)  title '  C10 [fF] >'      axis x1y2  w lp  lw 2   lc rgbcolor '#0000DF'  dt 1  pt 3, \
-   "< cat ../lst/mjs_bodem_0761_c_04d.lst"  using 1:($4)  title '  C40 [fF] >'      axis x1y2  w lp  lw 3   lc rgbcolor '#00009F'  dt 1  pt 3, \
-   "< cat ../lst/mjs_bodem_0761_c_04d.lst"  using 1:($5)  title '  C80 [fF] >'      axis x1y2  w lp  lw 4   lc rgbcolor '#00004F'  dt 1  pt 3, \
-   "< cat ../lst/mjs_bodem_0761_c_04d.lst"  using 1:($6)  title '  C120 [fF] >'     axis x1y2  w lp  lw 5   lc rgbcolor '#000000'  dt 1  pt 3
+   "< cat ../../knmi/lst/knmi_thdrs_04d.lst"  using 1:($6)  title '< regen7d [mm]'  axis x1y1  w lp  lw 12  lc rgbcolor '#DFDFFF'  dt 1  pt 3, \
+   "< cat ../lst/mjs_bodem_0761_c_04d.lst"    using 1:($3)  title '    C10 [fF] >'  axis x1y2  w lp  lw 2   lc rgbcolor '#0000DF'  dt 1  pt 3, \
+   "< cat ../lst/mjs_bodem_0761_c_04d.lst"    using 1:($4)  title '    C40 [fF] >'  axis x1y2  w lp  lw 3   lc rgbcolor '#00009F'  dt 1  pt 3, \
+   "< cat ../lst/mjs_bodem_0761_c_04d.lst"    using 1:($5)  title '    C80 [fF] >'  axis x1y2  w lp  lw 4   lc rgbcolor '#00004F'  dt 1  pt 3, \
+   "< cat ../lst/mjs_bodem_0761_c_04d.lst"    using 1:($6)  title '   C120 [fF] >'  axis x1y2  w lp  lw 5   lc rgbcolor '#000000'  dt 1  pt 3
 
 # ../../knmi/lst/knmi_thdrs_04d.lst

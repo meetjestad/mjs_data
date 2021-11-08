@@ -30,7 +30,7 @@ if ($sPer == '04d') {
     $uStartTime = time() - 1 * 86400;
 }
 $dtStart = gmdate("Y-m-d H:i:s", $uStartTime);
-#printf("dtStart='$dtStart'\n");
+#printf("StationId=$sStation_id StartTime=$uStartTime dtStart='$dtStart'\n");
 
 $sQuery1 = "SELECT timestamp, station_id, temperature, humidity FROM sensors_measurement WHERE station_id = $iStation_id AND timestamp >= '$dtStart' ORDER BY timestamp ASC";
 

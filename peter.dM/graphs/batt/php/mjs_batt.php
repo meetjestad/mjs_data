@@ -19,7 +19,9 @@ $iStation_id = (int) $sStation_id;
 $sStation_id = sprintf("%04d", $iStation_id);
 
 $sPer = $argv[2];
-if ($sPer == '04d') {
+if ($sPer == '01d') {
+    $uStartTime = time() - 1 * 86400;
+} else if ($sPer == '04d') {
     $uStartTime = time() - 4 * 86400;
 } else if ($sPer == '02w') {
     $uStartTime = time() - 14 * 86400;
@@ -27,6 +29,8 @@ if ($sPer == '04d') {
     $uStartTime = time() - 60 * 86400;
 } else if ($sPer == '06m') {
     $uStartTime = time() - 182 * 86400;
+} else if ($sPer == '02y') {
+    $uStartTime = time() - 731 * 86400;
 } else {
     $uStartTime = time() - 1 * 86400;
 }
@@ -91,7 +95,8 @@ foreach ($aaResult1 as $aRow) {
 	$iSolar = (int) $sSolar;
 	$iBatt  = (int) $sBatt;
 	$iSupp  = (int) $sSupp;
-	if ($iSolar < $iSupp) $sSolar="?";
+	if ($iSolar < $iSupp) $sSolar = "?";
+	if ($iBatt  < $iSupp) $sBatt  = "?";
 	#printf("Solar=$sSolar Batt=$sBatt Supp=$sSupp\n");
 
         fprintf($fpBatt,  "%s	%s	%s	%s	%s\n", 

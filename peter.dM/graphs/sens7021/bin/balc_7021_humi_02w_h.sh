@@ -39,7 +39,7 @@ FROM knmi_th
 WHERE source = 'knmi' AND localtijd > '$STARTTIME' ORDER BY localtijd DESC; "
 
 echo "-- PHYS=$PHYS PERIODE=$PERIODE STARTTIME=\"$STARTTIME\""
-echo "SQL=\"$SQL\""
+#echo "-- SQL=\"$SQL\""
 
 echo $SQL | mysql -N -u$DBUSER -D$DBASE -p$DBPASS | awk '{ printf("%s.%s %s %s %s %s %s %s %s\n", $1, $2, $3, $4, $5, $6, $7, $8, $9) }'
 

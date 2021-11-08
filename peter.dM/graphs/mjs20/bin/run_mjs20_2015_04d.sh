@@ -13,14 +13,16 @@ php ../php/getmjs20.php $NODE $PER
 ls -l ../lst/mjs_${TYPE}_${NODE}_${PER}.lst
 ls -l ../lst/mjs_${TYPE}_${NODE}_th_${PER}.lst
 ls -l ../lst/mjs_${TYPE}_${NODE}_pm_${PER}.lst
-[ ! -s ../lst/mjs_${TYPE}_${NODE}_th_${PER}.lst ] && {
+LINES=`cat ../lst/mjs_${TYPE}_${NODE}_th_${PER}.lst | wc -l`
+[ $LINES -lt 2 ] && {
     echo "../lst/mjs_${TYPE}_${NODE}_th_${PER}.lst  is empty; no plot"
 } || {
     ls -l ../plt/mjs_${TYPE}_${NODE}_th_${PER}.plt
     ../plt/mjs_${TYPE}_${NODE}_th_${PER}.plt
     ls -l ../png/mjs_${TYPE}_${NODE}_th_${PER}.png
 }
-[ ! -s ../lst/mjs_${TYPE}_${NODE}_pm_${PER}.lst ] && {
+LINES=`cat ../lst/mjs_${TYPE}_${NODE}_pm_${PER}.lst | wc -l`
+[ $LINES -lt 2 ] && {
     echo "../lst/mjs_${TYPE}_${NODE}_pm_${PER}.lst  is empty; no plot"
 } || {
     ls -l ../plt/mjs_${TYPE}_${NODE}_pm_${PER}.plt

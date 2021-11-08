@@ -22,5 +22,3 @@ echo "$0 `date`: einde"
 
 echo ""
 echo ""
-echo ""
-echo ""

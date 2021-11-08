@@ -129,11 +129,16 @@ fClose($fpTH);
 function write_pm($fpPM, $sLocTimestamp, $sStationId, $aExtra) {
     if (count($aExtra) >= 9) {
         $aExtra[1] = fmt($aExtra[1], 0);
-	$aExtra[3] = fmt($aExtra[3], 0);
-	#printf("$aExtra\n");
-        fprintf($fpPM,  "%s	%s	%.0f	%s	%.0f	%s	%.0f	%.0f	%.0f	%.0f	%.0f\n", 
-            $sLocTimestamp, $sStationId, $aExtra[0], $aExtra[1], $aExtra[2], 
-            $aExtra[3], $aExtra[4], $aExtra[5], $aExtra[6], $aExtra[7], $aExtra[8]);
+        $aExtra[3] = fmt($aExtra[3], 0);
+        #printf("$aExtra\n");
+        #if ($aExtra[0] + $aExtra[1] + $aExtra[2] + $aExtra[3] + $aExtra[4] + $aExtra[5] + $aExtra[6] + $aExtra[7] > 0) {
+        if ($aExtra[0] + $aExtra[1] + $aExtra[2] + $aExtra[3] + $aExtra[4] + $aExtra[5] + $aExtra[6] + $aExtra[7] == 0) {
+            printf("WARNING: $sLocTimestamp $sStationId:	extra[0:7] all 0\n");
+        } else {
+            fprintf($fpPM,  "%s	%s	%.0f	%s	%.0f	%s	%.0f	%.0f	%.0f	%.0f	%.0f\n", 
+                $sLocTimestamp, $sStationId, $aExtra[0], $aExtra[1], $aExtra[2], 
+                $aExtra[3], $aExtra[4], $aExtra[5], $aExtra[6], $aExtra[7], $aExtra[8]);
+        }
     }
 }
 

@@ -30,7 +30,7 @@ SQL="$SQL SELECT FROM_UNIXTIME(unixtime), 'NULL', 'NULL', 'NULL', 'NULL', 'NULL'
 
 
 echo "-- PHYS=$PHYS PERIODE=$PERIODE STARTTIME=\"$STARTTIME\""
-echo "SQL=\"$SQL\""
+echo "-- SQL=\"$SQL\""
 
 echo $SQL | mysql -N -u$DBUSER -D$DBASE -p$DBPASS | awk '{ printf("%s.%s %s %s %s %s %s %s %s %s %s %s\n", $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) }'
 

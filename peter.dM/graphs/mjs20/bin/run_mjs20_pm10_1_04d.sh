@@ -20,9 +20,10 @@ esac
 LINES=0
 for NODE in $NODES
 do
-   LS="` ls -l ../lst/mjs_${TYPE}_${NODE}_${PER}.lst`"
+   LS="`ls -l ../lst/mjs_${TYPE}_${NODE}_${PER}.lst`"
    LNS="`echo $LS | awk '{ print $5 }'`"
    LINES=`expr $LINES + $LNS`
+   echo "LS=$LS LNS=$LNS"
 done
 
 [ $LINES = 0 ] && {

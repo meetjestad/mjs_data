@@ -5,12 +5,9 @@ cd `dirname $0`
 HIER=`pwd`
 IK=`basename $0 .sh`
 
-#[ ! -d ../lst ] && mkdir ../lst
-#[ ! -d ../plt ] && mkdir ../plt
-#[ ! -d ../plt ] && mkdir ../png
 
-
-for SH in run_mjs20_????_02w.sh run_mjs20_????_?_02w.sh
+#for SH in run_mjs20_????_02w.sh run_mjs20_????_?_02w.sh
+for SH in run_mjs20_????_02w.sh 
 do
     [ `basename $SH .sh` != $IK ] && {
         [ -x $SH ] && {

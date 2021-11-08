@@ -1,24 +1,24 @@
-echo "$0 `date`: start"
+#echo sleep 20:
+#sleep 20
+
+#echo "$0 `date`: gestart; vorige liepen 15 + 5 s"
+echo "$0 `date`: gestart"
 echo ""
 
 cd `dirname $0` 
 HIER=`pwd`
-IK=`basename $0`
+IK=`basename $0 .sh`
+PER=`echo $IK | awk -F_ '{ print $4 }'`
+echo PER=$PER
 
 
-SH=run_knmi_th_06m.sh
-ls -l $SH
-./$SH 
-sleep 1
-cd $HIER
-
-for SH in run_fhum_????_06m.sh 
+for SH in run_fhum_????_${PER}.sh 
 do
-    [ `basename $SH` != $IK ] && {
+    [ `basename $SH .sh` != $IK ] && {
         [ -x $SH ] && {
             ls -l $SH
-            ./$SH
-            sleep 2
+            ./$SH | sed 's/^/    /'
+            sleep 1
         }
     }
 done

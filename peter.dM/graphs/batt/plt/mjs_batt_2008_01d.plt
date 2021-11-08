@@ -9,7 +9,7 @@ set terminal pngcairo size 1920,480 transparent
 set output "../png/mjs_batt_2008_01d.png"
 set xdata time
 set timefmt "%Y-%m-%d.%H:%M:%S"
-set format x "     %d\n       %b"
+set format x "%H\n%d"
 set autoscale xfix
 set xtics 14400
 set mxtics 4
@@ -26,6 +26,6 @@ set style fill transparent solid 0.10 noborder
 
 plot \
    "< cat ../../knmi/lst/knmi_thdrs_01d.lst"  using 1:($7)  title '< zonnestraling (KNMI)  '  axis x1y1  w lp  lw 12  lc rgbcolor '#FFDFBF'        pt 3, \
-   "< cat ../lst/mjs_batt_2008_sb_01d.lst"    using 1:($3)  title '                 solar >'  axis x1y2  w lp  lw 3   lc rgbcolor '#FF7F00'  dt 1  pt 3, \
-   "< cat ../lst/mjs_batt_2008_sb_01d.lst"    using 1:($4)  title '               battery >'  axis x1y2  w lp  lw 3   lc rgbcolor '#7F7FFF'  dt 1  pt 3, \
-   "< cat ../lst/mjs_batt_2008_sb_01d.lst"    using 1:($5)  title '                supply >'  axis x1y2  w lp  lw 3   lc rgbcolor '#007F00'  dt 1  pt 3
+   "< cat ../lst/mjs_batt_2008_sb_01d.lst"    using 1:($3)  title '                 solar >'  axis x1y2  w lp  lw 1   lc rgbcolor '#FF7F00'  dt 1  pt 7 ps 1.0, \
+   "< cat ../lst/mjs_batt_2008_sb_01d.lst"    using 1:($4)  title '               battery >'  axis x1y2  w lp  lw 0   lc rgbcolor '#7F7FFF'  dt 1  pt 7 ps 0.8, \
+   "< cat ../lst/mjs_batt_2008_sb_01d.lst"    using 1:($5)  title '                supply >'  axis x1y2  w lp  lw 0   lc rgbcolor '#007F00'  dt 1  pt 7 ps 0.8

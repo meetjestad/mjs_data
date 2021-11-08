@@ -5,7 +5,12 @@ TYPE="`echo $IK | awk -F_ '{ print $2 }'`"
 PER="`echo $IK | awk -F_ '{ print $4 }'`"
 echo HIER=$HIER TYPE=$TYPE PER=$PER
 
-for SH in ./run_${TYPE}_[0-9][0-9][0-9][0-9]_${PER}.sh
+for SH in run_${TYPE}_[0-9][0-9][0-9][0-9]_${PER}.sh
 do
-    [ -x $SH ] && ./$SH
+    [ -x $SH ] && {
+        echo $SH:
+        ./$SH | sed 's/^/    /'
+        echo ""
+    }
 done
+echo ""

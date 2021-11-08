@@ -8,7 +8,7 @@ do
     [ `basename $SH` != $IK ] && {
         [ -x $SH ] && {
             ls -l $SH
-            ./$SH
+            ./$SH | sed 's/^/    /'
             sleep 2
         }
     }

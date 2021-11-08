@@ -15,20 +15,25 @@ for SH in balc_fhum_????_${PER}.sh
 do
     ls -l $SH
     [ -x $SH ] && {
-        LST=`basename $SH .sh`.lst
+        LST=../lst/`basename $SH .sh`.lst
         PLT=`basename $SH .sh`.plt
         PNG=`basename $SH .sh`.png
-	echo $SH:
-        ./$SH
-        ls -l ../lst/$LST
-        ls -l ../plt/$PLT
-        ../plt/$PLT
-        ls -l ../png/$PNG
-        rm -f ../lst/$LST
-	sleep 1
-     }
-     cd $HIER
-     echo ""
+        #echo $SH:
+        ./$SH | sed 's/^/    /'
+        ls -l $LST | sed 's/^/    /'
+        REGELS=`cat $LST | wc -l`
+        [ $REGELS = 0 ] && {
+            echo "    $LST: empty, skipping ..."
+        } || {
+            ls -l ../plt/$PLT
+            ../plt/$PLT
+            ls -l ../png/$PNG
+            rm -f $LST
+        }
+        sleep 1
+    }
+    cd $HIER
+    echo ""
 done
 
 echo "`date`   $0: gestopt"

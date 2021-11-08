@@ -5,7 +5,7 @@ set style data lines
 set grid front
 set key left top
 set key font ",16"
-set terminal pngcairo size 1920,320 transparent
+set terminal pngcairo size 1920,480 transparent
 set output "../png/mjs_bodem_0203_t_02w.png"
 set xdata time
 set timefmt "%Y-%m-%d.%H:%M:%S"

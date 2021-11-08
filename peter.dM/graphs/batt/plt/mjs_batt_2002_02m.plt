@@ -26,6 +26,6 @@ set style fill transparent solid 0.10 noborder
 
 plot \
    "< cat ../../knmi/lst/knmi_thdrs_02m.lst"  using 1:($7)  title '< zonnestraling (KNMI)  '  axis x1y1  w lp  lw 12  lc rgbcolor '#FFDFBF'        pt 3, \
-   "< cat ../lst/mjs_batt_2002_sb_02m.lst"    using 1:($3)  title '                 solar >'  axis x1y2  w lp  lw 3   lc rgbcolor '#FF7F00'  dt 1  pt 3, \
-   "< cat ../lst/mjs_batt_2002_sb_02m.lst"    using 1:($4)  title '               battery >'  axis x1y2  w lp  lw 3   lc rgbcolor '#7F7FFF'  dt 1  pt 3, \
-   "< cat ../lst/mjs_batt_2002_sb_02m.lst"    using 1:($5)  title '                supply >'  axis x1y2  w lp  lw 3   lc rgbcolor '#007F00'  dt 1  pt 3
+   "< cat ../lst/mjs_batt_2002_sb_02m.lst"    using 1:($3)  title '                 solar >'  axis x1y2  w lp  lw 1   lc rgbcolor '#FF7F00'  dt 1  pt 7 ps 1.0, \
+   "< cat ../lst/mjs_batt_2002_sb_02m.lst"    using 1:($4)  title '               battery >'  axis x1y2  w lp  lw 0   lc rgbcolor '#7F7FFF'  dt 1  pt 7 ps 0.8, \
+   "< cat ../lst/mjs_batt_2002_sb_02m.lst"    using 1:($5)  title '                supply >'  axis x1y2  w lp  lw 0   lc rgbcolor '#007F00'  dt 1  pt 7 ps 0.8

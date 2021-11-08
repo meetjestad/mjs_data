@@ -21,6 +21,9 @@ case $PERIODE in
     06m) STARTTIME="`date --date='-6 months' '+%Y-%m-%d %H:%M:%S'`"
 	 LIMIT=4373
 	 ;;
+    02y) STARTTIME="`date --date='-2 years'  '+%Y-%m-%d %H:%M:%S'`"
+	 LIMIT=17492
+	 ;;
     *)   STARTTIME="`date --date='-1 days'   '+%Y-%m-%d %H:%M:%S'`"
 	 LIMIT=25
 	 ;;
@@ -33,12 +36,12 @@ esac
 . ./meetjestad_test.env
 
 SQL="SELECT FROM_UNIXTIME(unixtime), temp, humi, dauw, regen, regen7d, straling FROM knmi_th \
-ORDER BY unixtime DESC limit $LIMIT"
+WHERE knmi_station = 260  ORDER BY unixtime DESC limit $LIMIT"
 #WHERE localtijd > '$STARTTIME' ORDER BY unixtime ASC; "
-echo "# SQL=$SQL"
+echo "    # SQL=$SQL"
 
 echo $SQL | mysql -N -u$DBUSER -D$DBASE -p$DBPASS | awk '{ printf("%s.%s %.1f %.0f %.1f %.1f %.2f %.0f\n", $1, $2, $3, $4, $5, $6, $7, $8) }' > ../../knmi/lst/$LST
-ls -l ../../knmi/lst/$LST
+ls -l ../../knmi/lst/$LST | sed 's/^/    /'
 
 echo "`date`   $0: gestopt"
 echo ""

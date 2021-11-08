@@ -22,13 +22,13 @@ echo HIER=$HIER IK=$IK PDDC=$PDDC RUW=$RUW LOG=$LOG
 wget -O$RUW -o$LOG 'http://demmer.xs4all.nl:86/sens7021/sens7021.php?header&number=36'   # 36 = 6 every 5 minutes = 30 minutes history
 [ ! -r $RUW ] && {
     echo "wget mislukt; abort"
-        exit 1
+    exit 1
 }
 ls -l $RUW $LOG
 
 # parse the raw html data into columns:
 REGELS=`cat $RUW | wc -l`
-EIND=` expr $REGELS - 2`
+EIND=`expr $REGELS - 3`
 sed -n "2,${EIND}p" $RUW | sed -f sens7021tocsv.sed > $CSV
 ls -l $CSV
 
@@ -36,6 +36,8 @@ ls -l $CSV
 sed -n '2,$p' $CSV | awk -F';' '{ printf("REPLACE INTO sens7021 (gmtijd, unixtime, source, port, serial, temp, humi, dewp, heat, power, te9808, lux) VALUES (%c%s%c, %s, %c%s%c, %s, %c%s%c, %s, %s, %s, %s, %s, %s, %s);\n", 39,$1,39, $2, 39,$3,39, $4, 39,$5,39, $6, $7, $8, $9, $10, $11, $12) }' > $SQL
 
 
+#echo -n "SQL="
+#cat $SQL
 ls -l $SQL
 
 # store the data in the database:
