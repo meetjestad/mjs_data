@@ -9,7 +9,7 @@ The live application is running on https://meetjestad.databash.nl.
 The application can be run locally by first building the Docker image and then running the Docker image:
 ```
 docker build -t mjs-streamlit .
-docker run -p 9090:9090 -e PORT=9090 --name mjs-dashboard mjs-streamlit:latest
+docker run --rm -p 9090:9090 -e PORT=9090 --name mjs-dashboard mjs-streamlit:latest
 ```
 
 The application can then be accessed in the browser on address `localhost:9090`.
