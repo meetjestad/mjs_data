@@ -39,7 +39,7 @@ parameters.register_string_list_parameter(key="extra_sensor_ids", default_value=
 parameters.register_string_list_parameter(key="knmi_ids", default_value=False)
 
 parameters.register_date_parameter(
-    key="start_date", default_value=datetime.datetime(2020, 1, 1)
+    key="start_date", default_value=datetime.datetime(2021, 1, 1)
 )
 parameters.register_date_parameter(
     key="end_date", default_value=datetime.datetime(2021, 12, 1)
@@ -88,9 +88,9 @@ knmi_input = st.checkbox(
 date_begin_input = st.date_input(
     "Startdatum",
     value=parameters.start_date.value,
-    key=parameters.end_date.key,
+    key=parameters.start_date.key,
     on_change=functools.partial(
-        parameters.update_parameter_from_session_state, key=parameters.end_date.key
+        parameters.update_parameter_from_session_state, key=parameters.start_date.key
     ),
 )
 date_end_input = st.date_input(
