@@ -35,6 +35,7 @@ parameters = streamlit_parameters.parameters.Parameters()
 
 parameters.register_string_parameter(key="plot_type", default_value="Line")
 parameters.register_string_list_parameter(key="sensor_ids", default_value="725")
+parameters.register_string_list_parameter(key="extra_sensor_ids", default_value="")
 parameters.register_string_list_parameter(key="knmi_ids", default_value=False)
 
 parameters.register_date_parameter(
@@ -63,6 +64,15 @@ sensors_input = st.multiselect(
     key=parameters.sensor_ids.key,
     on_change=functools.partial(
         parameters.update_parameter_from_session_state, key=parameters.sensor_ids.key
+    ),
+)
+
+extra_sensor_ids_input = st.text_input(
+    label="Of voer de ids handmatig in, scheid de waarden met een comma, bijv: 122,150",
+    value=parameters.extra_sensor_ids.default,
+    key=parameters.extra_sensor_ids.key,
+    on_change=functools.partial(
+        parameters.update_parameter_from_session_state, key=parameters.extra_sensor_ids.key
     ),
 )
 
@@ -98,6 +108,8 @@ date_end = date_end_input.strftime("%Y-%m-%d, %H:%M")
 
 # Prepare sensor ids in the format the API calls expects it.
 sensors = ",".join(sensors_input)
+if (extra_sensor_ids_input != ""):
+    sensors = sensors + "," + extra_sensor_ids_input
 
 # Create link to API endpoint with the values given in the inputs.
 link = f"https://meetjestad.net/data/?type=sensors&ids={sensors}&begin={date_begin}&end={date_end}&format=json"
