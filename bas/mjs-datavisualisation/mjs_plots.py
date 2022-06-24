@@ -103,14 +103,6 @@ def mjs_plot(chart_type: str, df):
         key="plot_title",
         default_value="Gemiddelde temperatuur van meetkastje 725 in 2021",
     )
-    parameters.register_string_parameter(key="x_axis_label", default_value="Datum")
-    parameters.register_string_parameter(
-        key="y_axis_label", default_value="Gemiddelde temperatuur"
-    )
-    parameters.register_string_parameter(
-        key="z_axis_label", default_value="Gemiddelde luchtvochtigheid"
-    )
-    parameters.register_string_parameter(key="color_axis_label", default_value="ID")
 
     plot_title = st.text_input(
         label="Titel van jouw grafiek",
