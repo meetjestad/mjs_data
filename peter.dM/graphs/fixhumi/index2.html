@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+    <HEAD>
+        <TITLE>mjs-fhum</title>
+	<LINK HREF="../../style/meetjestad.css" REL="stylesheet" TYPE="text/css" MEDIA="all" />
+    </head>
+    <BODY>
+        <A NAME=top></a>
+        <A HREF=../../..>meetjestad index</a><br>
+        <A HREF=..>meetjestad time graphs index</a><br>
+	<H1>Heating the humidity sensor and using the dewpoint</h1>
+	<P>
+	<B><I>The flaw:</i></b><br>
+	On humidity measurements made by an Si7021 sensor the following can occur:<br>
+	After some usage time, the sensor soaks up moist, and measured humidity values increase with an offset,<br>
+       	measuring values to over 100.<br>
+	Due to limitations in the electronic design, at 120, the Analog-to-Digital converter runs over, <br>
+	and measurements are then presented as -6 and upwards, practically making the humidity measurements useless.<P>
+	<B><I>The fix:</i></b><br>
+	To overcome this, the humidity sensor is placed in a heated cabinet.<br>
+	From the inside humidity and temperature, the dewpoint is calculated.<br>
+	Inside and outside dewpoint should be the same.<br>
+	For reference, the dewpoint is compared with the dewpoint measured by the KNMI (*).<br>
+	Then, from the measured dewpoint and a measured outside temperature, the outside humidity is calculated.<br>
+	Also this is compared against the values measured by the KNMI.<br>
+	<br>
+	<I>Based on a test setup built by <A HREF=https://kitt.nl/>Andries Lohmeijer</a>.</i><br>
+	<br>
+	(*) KNMI = National Wheather Institute.<br>
+	<P>
+
+        <A HREF=mjs_fhum2_1.php>heated and cold cabinet measurements (raw)</a><br>
+        <A HREF=mjs_fhum2_2.php>heated and cold cabinet measurements (calculated)</a><br>
+	<P>
+
+	<B><I>See also:</i></b><br>
+       	<A HREF=index1.html>post-fixing the graphs</a>.<br>
+       	<A HREF=../sens7021/index_humi.html>heating up the sensor</a>.<br>
+	<P>
+               
+        <A HREF=#top>top</a><br>
+    </BODY>
+</HTML>

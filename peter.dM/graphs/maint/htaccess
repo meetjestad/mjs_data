@@ -1,0 +1,20 @@
+<Files ~ "\.sh">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ~ "\.SH">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ~ "\.env">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files ~ "lib">
+    Order allow,deny
+    Deny from all
+</Files>
+
