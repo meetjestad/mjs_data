@@ -45,6 +45,8 @@ parameters.register_date_parameter(
     key="end_date", default_value=datetime.datetime(2021, 12, 1)
 )
 
+parameters.register_string_parameter(key="timespan", default_value="Dag")
+
 # Streamlit input fields to interact with in the application.
 chart_type = st.selectbox(
     label="Grafiek type",
@@ -102,6 +104,20 @@ date_end_input = st.date_input(
     ),
 )
 
+timespans = ("Dag", "Uur", "Maand")
+
+# Streamlit input fields to interact with in the application.
+timespan = st.selectbox(
+    label="Tijdsspanne",
+    options=timespans,
+    index=timespans.index(parameters.timespan.value),
+    key=parameters.timespan.key,
+    on_change=functools.partial(
+        parameters.update_parameter_from_session_state,
+        key=parameters.timespan.key,
+    ),
+)
+
 # Format the date input, to prepare it in the format the API call expects.
 date_begin = date_begin_input.strftime("%Y-%m-%d, %H:%M")
 date_end = date_end_input.strftime("%Y-%m-%d, %H:%M")
@@ -144,9 +160,18 @@ def load_data():
     # Convert to Pandas datetime format for further computation.
     df["timestamp"] = pd.to_datetime(df["timestamp"])
 
-    # For each sensor compute the minimum, maximum and mean values per day of each of the columns selected above.
+    
+    # For each sensor compute the minimum, maximum and mean values per timespan of each of the columns selected above.
+    frequency = ""
+    if (timespan == "Dag"):
+        frequency = "D"
+    elif (timespan == "Maand"):
+        frequency = "M"
+    else:
+        frequency = "H"
+
     df = (
-        df.groupby(["id", pd.Grouper(key="timestamp", freq="D")])
+        df.groupby(["id", pd.Grouper(key="timestamp", freq=frequency)])
         .agg(["min", "max", "mean"])
         .round(2)
     )
