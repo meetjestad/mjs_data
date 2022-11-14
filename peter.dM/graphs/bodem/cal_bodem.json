@@ -1,0 +1,2265 @@
+[
+ {
+  "id": "default",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220619",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "20.7",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "20.8",
+      "alpha": "0",
+      "beta": "0.019",
+      "gamma": "0.019"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2003",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220322",
+    "raw": {
+     "airtemp": "19.8",
+     "humidity": "52.3",
+     "soilM1": {
+      "air": "14",
+      "soil": "781",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "159",
+      "soil": "148"
+     },
+     "soilM2": {
+      "air": "41",
+      "soil": "799",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "159",
+      "soil": "148"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00047",
+      "b": "11.3",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00047",
+      "b": "33.0",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2021",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "9",
+   "soilT10": "10",
+   "soilM40": "11",
+   "soilT40": "12"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220619",
+    "raw": {
+     "airtemp": "22.6",
+     "humidity": "71",
+     "soilM1": {
+      "air": "37",
+      "soil": "746",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "158",
+      "soil": "153"
+     },
+     "soilM2": {
+      "air": "30",
+      "soil": "754",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "159",
+      "soil": "156"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00051",
+      "b": "30.0",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00050",
+      "b": "24.2",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2059",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "1",
+   "soilT10": "0",
+   "soilM40": "3",
+   "soilT40": "2"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220303",
+    "raw": {
+     "airtemp": "17.9",
+     "humidity": "59.3",
+     "soilM1": {
+      "air": "17",
+      "soil": "812",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "135",
+      "soil": "125"
+     },
+     "soilM2": {
+      "air": "24",
+      "soil": "808",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "131",
+      "soil": "122"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00045",
+      "b": "15.7",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00046",
+      "b": "22.7",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2060",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220303",
+    "raw": {
+     "airtemp": "14.4",
+     "humidity": "75",
+     "soilM1": {
+      "air": "30",
+      "soil": "811",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "132",
+      "soil": "124"
+     },
+     "soilM2": {
+      "air": "20",
+      "soil": "819",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "132",
+      "soil": "123"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00046",
+      "b": "28.2",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00045",
+      "b": "18.8",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2061",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220303",
+    "raw": {
+     "airtemp": "20.6",
+     "humidity": "",
+     "soilM1": {
+      "air": "8",
+      "soil": "760",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "130",
+      "soil": "124"
+     },
+     "soilM2": {
+      "air": "16",
+      "soil": "780",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "130",
+      "soil": "124"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00048",
+      "b": "7.6",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00047",
+      "b": "15.2",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2062",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220303",
+    "raw": {
+     "airtemp": "13.3",
+     "humidity": "57.8",
+     "soilM1": {
+      "air": "23",
+      "soil": "783",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "127",
+      "soil": "125"
+     },
+     "soilM2": {
+      "air": "15",
+      "soil": "768",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "129",
+      "soil": "125"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00048",
+      "b": "22.2",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00048",
+      "b": "14.3",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2063",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "23.5",
+     "humidity": "44.6",
+     "soilM1": {
+      "air": "20",
+      "soil": "728",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "176",
+      "soil": "161"
+     },
+     "soilM2": {
+      "air": "19",
+      "soil": "724",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "174",
+      "soil": "160"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00051",
+      "b": "14.4",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00052",
+      "b": "13.9",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2064",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "33",
+      "soil": "740",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "167",
+      "soil": "160"
+     },
+     "soilM2": {
+      "air": "22",
+      "soil": "741",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "171",
+      "soil": "162"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00051",
+      "b": "25.2",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00050",
+      "b": "16.4",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2065",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "21.7",
+     "humidity": "44",
+     "soilM1": {
+      "air": "25",
+      "soil": "740",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "169",
+      "soil": "160"
+     },
+     "soilM2": {
+      "air": "25",
+      "soil": "735",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "169",
+      "soil": "161"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00051",
+      "b": "18.9",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00051",
+      "b": "18.9",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2066",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "25",
+      "soil": "767",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "172",
+      "soil": "162"
+     },
+     "soilM2": {
+      "air": "35",
+      "soil": "746",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "170",
+      "soil": "162"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "18.5",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00051",
+      "b": "26.3",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2067",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "31",
+      "soil": "733",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "169",
+      "soil": "159"
+     },
+     "soilM2": {
+      "air": "34",
+      "soil": "771",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "169",
+      "soil": "159"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00052",
+      "b": "23.4",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "25.7",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2068",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "22.4",
+     "humidity": "43.75",
+     "soilM1": {
+      "air": "38",
+      "soil": "769",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "169",
+      "soil": "160"
+     },
+     "soilM2": {
+      "air": "22",
+      "soil": "755",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "169",
+      "soil": "160"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "28.7",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "16.6",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2069",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220510",
+    "raw": {
+     "airtemp": "22.8",
+     "humidity": "44.7",
+     "soilM1": {
+      "air": "26",
+      "soil": "798",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "170",
+      "soil": "158"
+     },
+     "soilM2": {
+      "air": "25",
+      "soil": "713",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "172",
+      "soil": "159"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00046",
+      "b": "19.5",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00053",
+      "b": "18.5",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2070",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2075",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2076",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220619",
+    "raw": {
+     "airtemp": "21.3",
+     "humidity": "64",
+     "soilM1": {
+      "air": "45",
+      "soil": "752",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "164",
+      "soil": "158"
+     },
+     "soilM2": {
+      "air": "47",
+      "soil": "739",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "163",
+      "soil": "157"
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00051",
+      "b": "35.1",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00053",
+      "b": "47.0",
+      "alpha": "0",
+      "beta": "0.000",
+      "gamma": "0.000"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2077",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2078",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2079",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2080",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2081",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2082",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2083",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2084",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2085",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT1": {
+      "air": "",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "",
+      "soil": "",
+      "soilmoisture": "",
+      "soiltype": "",
+      "soilbase": ""
+     },
+     "soilT2": {
+      "air": "",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT1": {
+      "a": "",
+      "b": ""
+     },
+     "soilM2": {
+      "a": "",
+      "b": "",
+      "alpha": "",
+      "beta": "",
+      "gamma": ""
+     },
+     "soilT2": {
+      "a": "",
+      "b": ""
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2092",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220807",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "28",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "172",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "26",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "170",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "20.7",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "19.5",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2094",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220807",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "27",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "171",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "20",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "168",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "20.1",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "15.2",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2095",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220807",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "15",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "171",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "23",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "170",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "11.2",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "17.3",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2097",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220807",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "26",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "165",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "26",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "165",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "20.2",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "20.2",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "2098",
+  "type": "soil_moisture",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM10": "0",
+   "soilT10": "1",
+   "soilM40": "2",
+   "soilT40": "3"
+  },
+  "location": {
+   "soil": "sand",
+   "orientation": "",
+   "description": "",
+   "height": "",
+   "depths": "[10,40]"
+  },
+  "calibrations": {
+   "workshop": {
+    "start": "20220807",
+    "raw": {
+     "airtemp": "",
+     "humidity": "",
+     "soilM1": {
+      "air": "30",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT1": {
+      "air": "164",
+      "soil": ""
+     },
+     "soilM2": {
+      "air": "15",
+      "soil": "",
+      "soilmoisture": "0.32",
+      "soiltype": "sand",
+      "soilbase": "89"
+     },
+     "soilT2": {
+      "air": "164",
+      "soil": ""
+     }
+    },
+    "values": {
+     "soilM1": {
+      "a": "0.00049",
+      "b": "23.4",
+      "alpha": "0.0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT1": {
+      "a": "0.25",
+      "b": "-20.00"
+     },
+     "soilM2": {
+      "a": "0.00049",
+      "b": "11.7",
+      "alpha": "0",
+      "beta": "0.020",
+      "gamma": "0.020"
+     },
+     "soilT2": {
+      "a": "0.25",
+      "b": "-20"
+     }
+    }
+   }
+  }
+ }
+]

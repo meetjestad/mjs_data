@@ -1,0 +1,182 @@
+[
+ {
+  "id": "default",
+  "type": "greenroof",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM": "0",
+   "soilT": "1"
+   },
+  "calibration": {
+   "soilM": {
+    "a": "0.100",
+    "b": "-2.000"
+   },
+   "soilT": {
+    "a": "0.250",
+    "b": "-20.00"
+   }
+  },
+  "location": {
+   "orientation": "",
+   "insulation": ""
+  },
+  "raw": {
+   "soilM": {
+    "air": "20",
+    "water": "1000"
+   },
+   "soilT": {
+    "water": "150",
+    "air": "150"
+   },
+   "airT": {
+    "air": "20.0"
+   }
+  }
+ },
+ {
+  "id": "2053",
+  "type": "greenroof",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM": "0",
+   "soilT": "1"
+   },
+  "calibration": {
+   "soilM": {
+    "a": "0.103",
+    "b": "-2.066"
+   },
+   "soilT": {
+    "a": "0.309",
+    "b": "-24.71"
+   }
+  },
+  "location": {
+   "orientation": "",
+   "insulation": ""
+  },
+  "raw": {
+   "soilM": {
+    "air": "20",
+    "water": "988"
+   },
+   "soilT": {
+    "water": "148",
+    "air": "153"
+   },
+   "airT": {
+    "air": "21.0"
+   }
+  }
+ },
+ {
+  "id": "2054",
+  "type": "greenroof",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM": "0",
+   "soilT": "1"
+   },
+  "calibration": {
+   "soilM": {
+    "a": "0.104",
+    "b": "-2.299"
+   },
+   "soilT": {
+    "a": "0.299",
+    "b": "-23.88"
+   }
+  },
+  "location": {
+   "orientation": "",
+   "insulation": ""
+  },
+  "raw": {
+   "soilM": {
+    "air": "22",
+    "water": "979"
+   },
+   "soilT": {
+    "water": "148",
+    "air": "162"
+   },
+   "airT": {
+    "air": "20.3"
+   }
+  }
+ },
+ {
+  "id": "2055",
+  "type": "greenroof",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM": "0",
+   "soilT": "1"
+   },
+  "calibration": {
+   "soilM": {
+    "a": "0.105",
+    "b": "-3.575"
+   },
+   "soilT": {
+    "a": "0.303",
+    "b": "-24.24"
+   }
+  },
+  "location": {
+   "orientation": "",
+   "insulation": ""
+  },
+  "raw": {
+   "soilM": {
+    "air": "34",
+    "water": "985"
+   },
+   "soilT": {
+    "water": "148",
+    "air": "159"
+   },
+   "airT": {
+    "air": "20.6"
+   }
+  }
+ },
+ {
+  "id": "2056",
+  "type": "greenroof",
+  "sensor": "PTSW10",
+  "format": {
+   "soilM": "0",
+   "soilT": "1"
+   },
+  "calibration": {
+   "soilM": {
+    "a": "0.104",
+    "b": "-3.646"
+   },
+   "soilT": {
+    "a": "0.267",
+    "b": "-21.37"
+   }
+  },
+  "location": {
+   "orientation": "",
+   "insulation": ""
+  },
+  "raw": {
+   "soilM": {
+    "air": "35",
+    "water": "995"
+   },
+   "soilT": {
+    "water": "150",
+    "air": "150"
+   },
+   "airT": {
+    "air": "18.7"
+   }
+  }
+ }
+]

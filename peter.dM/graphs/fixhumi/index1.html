@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+    <HEAD>
+        <TITLE>mjs-fhum</title>
+	<LINK HREF="../../style/meetjestad.css" REL="stylesheet" TYPE="text/css" MEDIA="all" />
+    </head>
+    <BODY>
+        <A NAME=top></a>
+        <A HREF=../../..>meetjestad index</a><br>
+        <A HREF=..>meetjestad time graphs index</a><br>
+	<H1>Fixing humidity measurements display</h1>
+	<P>
+	<B><I>The flaw:</i></b><br>
+	On humidity measurements made by an Si7021 sensor the following can occur:<br>
+	After some usage time, the sensor soaks up moist, and measured humidity values increase with an offset,<br>
+       	measuring values to over 100.<br>
+	Due to limitations in the electronic design, at 120, the Analog-to-Digital converter runs over, <br>
+	and measurements are then presented as -6 and upwards.<P>
+	<B><I>The fix:</i></b><br>
+	To overcome this, an algorithm is applied to the measured values:<br>
+	When they suddenly drop, from then on 120 is added.<br>
+	The reverse is done again at sudden rises.<br>
+	Apart from the effect, that the measurement range still has its offset, this works reasonably well, if the offset is not too large.<br>
+	The pages linked to below show the effect of the application of the algorithm,<br>
+	for 7 regular meetjestad nodes, and for 6 testnodes.<br>
+	<P>
+	<B><I>See also:</i></b><br>
+       	<A HREF=https://meetjestad.net/static/graphs/sens7021/index_humi_h.html>sens7021/humi</a>,
+	describing heating up the sensors, with the effect that the moist evaporates and the offset decreases.<br>
+	<P>
+
+        <A HREF=mjs_fhum_0100.html>node 100 measurements</a><br>
+	<!-- <A HREF=mjs_fhum_0196.html>node 196 measurements</a><br> -->
+        <A HREF=mjs_fhum_0300.html>node 300 measurements</a><br>
+        <A HREF=mjs_fhum_0410.html>node 410 measurements</a><br>
+        <A HREF=mjs_fhum_0499.html>node 499 measurements</a><br>
+        <A HREF=mjs_fhum_0567.html>node 567 measurements</a><br>
+        <A HREF=mjs_fhum_0697.html>node 697 measurements</a><br>
+        <A HREF=balc_fhum_0001.html>testnode 1 measurements</a> (no heating)<br>
+        <A HREF=balc_fhum_0002.html>testnode 2 measurements</a> (heating 300 J/day)<br>
+        <A HREF=balc_fhum_0003.html>testnode 3 measurements</a> (heating 300 J/day)<br>
+        <A HREF=balc_fhum_0004.html>testnode 4 measurements</a> (no heating)<br>
+        <A HREF=balc_fhum_0005.html>testnode 5 measurements</a> (heating 300 J/day)<br>
+        <A HREF=balc_fhum_0006.html>testnode 6 measurements</a> (no heating)<br>
+        <P>
+               
+        <A HREF=#top>top</a><br>
+    </BODY>
+</HTML>
